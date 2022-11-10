@@ -13,28 +13,37 @@ function NavBar () {
             <div class={styles.navbar__upper}>
                 <div class={styles.navbar__title}>
                     <FontAwesomeIcon icon={faHouseChimney} id={styles.navbar__title__logo} />
-                    <h1>생산 준비 현황</h1>
+                    <h1>생산 준비 현황 Dashboard</h1>
                 </div>
                 <div class={styles.navbar__userInfo}>
+                    <div class={styles.navbar__userInfo__left}>
+                        <FontAwesomeIcon icon={faUser} id={styles.navbar__userInfo__logo}/>
+                        <button class={styles.navbar__userInfo__logout}>Logout</button> 
+                    </div>
                     
-                    <FontAwesomeIcon icon={faUser} id={styles.navbar__userInfo__logo}/>
                     <div class={styles.navbar__userInfo__profile}>
                         <h3 class={styles.navbar__userInfo__name}>{userName}</h3>
                         <span class="navbar__userInfo__about">{userTeam} / {userRank}</span>
                     </div>
-                    <button class={styles.navbar__userInfo__logout}>Log Out</button> 
+                    
                 </div>
             </div>
-            <hr />
+            <hr class={styles.hr} />
             <div class={styles.navbar__under}>
                 <div class="navbar__under__menu">
                     <h2>자재 준비 현황</h2>
                 </div>
+                <div class={styles.navbar__under__vl}>
+
+                </div>
                 <div class="navbar__under__menu">
                     <h2>문서 승인 현황</h2>
                 </div>
+                <div class={styles.navbar__under__vl}>
+
+                </div>
                 <div class="navbar__under__menu">
-                    <h2>Raw Data</h2>
+                    <h2>Raw Data 입력</h2>
                 </div>
             </div>
             

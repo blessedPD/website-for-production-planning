@@ -22,6 +22,7 @@
     display: flex;
     align-items: center;
     color: white;
+    font-size: 20px;
 }
 
 #navbar__title__logo{
@@ -38,20 +39,29 @@
     
 }
 
+.navbar__userInfo__left{
+    display: flex;
+    flex-direction: column;
+    background-color: cornflowerblue;
+}
 #navbar__userInfo__logo{
-    font-size: 40px;
+    font-size: 50px;
     color: blue;
     margin: 0;
     padding: 11px 20px;
-    background-color: var(--color-darkBlueGray);
     
+}
+
+.navbar__userInfo__logout{
+    margin: 5px 5px;
 }
 
 .navbar__userInfo__profile{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px 15px;
+    padding: 5px 15px;
+    margin: auto;
     background-color: var(--color-lightBlueGray);
 }
 
@@ -59,11 +69,18 @@
     margin: 10px;
 }
 
-.navbar__userInfo__logout{
-    margin: 20px 10px;
-}
-
 .navbar__under{
     display: flex;
-    justify-content:space-around
+    justify-content:space-around;
+    align-content: center;
+}
+
+.navbar__under__vl{
+    border-left: 1px solid white;
+    height: 60px;
+}
+
+.hr{
+    height : 3px;
+    background: white;
 }
