@@ -4,9 +4,9 @@ import { faUser, faHouseChimney } from "@fortawesome/free-solid-svg-icons";
 import styles from "./NavBar.module.css";
 
 function NavBar () {
-    const [userName, changeUserName] = useState("홍길동");
-    const [userTeam, changeUserTeam] = useState("생산관리 1팀");
-    const [userRank, changeUserRank] = useState("사원");
+    const [userName, changeUserName] = useState("");
+    const [userTeam, changeUserTeam] = useState("");
+    const [userRank, changeUserRank] = useState("");
 
     return (
         <section id={styles.navbar}>
