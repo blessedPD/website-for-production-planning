@@ -3,11 +3,8 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faUser, faHouseChimney } from "@fortawesome/free-solid-svg-icons";
 import styles from "./NavBar.module.css";
 
-function NavBar () {
-    const [userName, changeUserName] = useState("");
-    const [userTeam, changeUserTeam] = useState("");
-    const [userRank, changeUserRank] = useState("");
-
+function NavBar ({userNameFromApp,userTeamFromApp, userRankFromApp,logOutClick}) {
+    
     return (
         <section id={styles.navbar}>
             <div class={styles.navbar__upper}>
@@ -18,12 +15,16 @@ function NavBar () {
                 <div class={styles.navbar__userInfo}>
                     <div class={styles.navbar__userInfo__left}>
                         <FontAwesomeIcon icon={faUser} id={styles.navbar__userInfo__logo}/>
-                        <button class={styles.navbar__userInfo__logout}>Logout</button> 
+                        <button class={styles.navbar__userInfo__logout}
+                        onClick={logOutClick}
+                        >
+                            Logout
+                        </button> 
                     </div>
                     
                     <div class={styles.navbar__userInfo__profile}>
-                        <h3 class={styles.navbar__userInfo__name}>{userName}</h3>
-                        <span class="navbar__userInfo__about">{userTeam} / {userRank}</span>
+                        <h3 class={styles.navbar__userInfo__name}>{userNameFromApp}</h3>
+                        <span class="navbar__userInfo__about">{userTeamFromApp} / {userRankFromApp}</span>
                     </div>
                     
                 </div>

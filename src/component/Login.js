@@ -3,7 +3,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faUser, faHouseChimney,faKey } from "@fortawesome/free-solid-svg-icons";
 import loginStyles from "./Login.module.css";
 
-function Login ({checkLogin}) {
+function Login ({checkLogin, isLoginSuccess}) {
     const [id, changeId] = useState("");
     const onIdChange = (event)=>{
         changeId(event.target.value);
@@ -15,13 +15,17 @@ function Login ({checkLogin}) {
     };
 
     const ClickLogin = ()=>{
-        console.log(id);
-        console.log(pw);
-
+        checkLogin(id,pw);
     };
+
     return(
         <section id={loginStyles.login}>
             <div class={loginStyles.login__upper}>
+                {isLoginSuccess? null 
+                :<span style={{color: "red"}}>
+                    * 로그인 실패!! ID와 Password를 확인해주세요 *
+                </span>
+                }
                 <div class={loginStyles.login__upper__inputBox}>
                     <label htmlFor ="userIcon" class={loginStyles.login__inputBox__label}>
                         <FontAwesomeIcon icon={faUser} />
