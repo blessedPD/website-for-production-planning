@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import NavBar from "./component/NavBar.js";
-import Login from "./component/Login.js"
+import Login from "./component/Login.js";
+import Dashboard from "./component/Dashboard.js";
 import { render } from '@testing-library/react';
 
 
@@ -53,7 +54,8 @@ function App() {
       <NavBar userNameFromApp={userName} userTeamFromApp={userTeam} 
       userRankFromApp={userRank} logOutClick={logOutClicked} /> 
       {isLogin? null : <Login checkLogin={checkLogin} isLoginSuccess={isLoginSuccess}/>}
-      {isLogin? "Main Contetns 두두등장": null}
+      {isLogin? <Dashboard />: null} 
+      
     </div>
   );
 }
