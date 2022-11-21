@@ -1,0 +1,32 @@
+.search{
+    display: flex;
+}
+
+.search__box{
+    margin-right: 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.search__box__name{
+    margin-right: 10px;
+    background-color: slategray;
+    font-size:20px;
+    padding: 5px;
+}
+
+.search__box__inputBox{
+    display: flex;
+    align-items: center;
+}
+.search__box__input{
+    height: 25px;
+    width: 150px;
+}
+
+.search__box__inputIcon{
+    height: 31px;
+    font-size: 25px;
+    padding: 0px;
+}

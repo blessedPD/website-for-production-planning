@@ -1,29 +1,34 @@
-.Maindiv{
-    display: flex;
+.MainDiv{
+    display:flex;
     flex-direction: column;
     align-items: center;
     width: 120px;
+    
 }
 
 .upperDiv{
     background-color: green;
-    max-width: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10 10 0 0;
+    padding: 10px 15px ;
+    
 }
 
 .lowerDiv{
     background-color: red;
-    max-width: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px 15px ;
 }
 
 .emptyDiv{
     background-color: white;
     height: 20px;
+}
+
+.divText{
+    margin: 5px 0px;
 }
 

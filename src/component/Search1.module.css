@@ -1,0 +1,27 @@
+.search__box{
+    margin-right: 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.search__box__name{
+    margin-right: 10px;
+    background-color: rgb(153, 195, 236);
+    font-size:20px;
+    padding: 5px;
+    
+}
+
+.search__box__input{
+    height: 25px;
+    width: 250px;
+    margin: 20px 5px;
+}
+
+.search__box__inputIcon{
+    height: 31px;
+    font-size: 25px;
+    padding: 0px;
+}
+
