@@ -7,20 +7,21 @@
 }
 
 .upperDiv{
-    background-color: green;
+    background-color: rgb(94, 226, 94);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px 15px ;
-    
+    border-radius: 10%;
 }
 
 .lowerDiv{
-    background-color: red;
+    background-color: rgb(231, 77, 77);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px 15px ;
+    border-radius: 10%;
 }
 
 .emptyDiv{

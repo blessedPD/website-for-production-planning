@@ -7,6 +7,7 @@ import Search1 from "./Search1.js";
 
 function SelectedList1({onSubmit}){
 
+    //테이블 Column 리스트
     const columns = useMemo(()=>[
         {
             accessor: "division",
@@ -42,6 +43,8 @@ function SelectedList1({onSubmit}){
         },
     ],[]);
 
+    //데이터 . App.js에서 Dashboard.js로, Dashboard.js에서 SelectedList.js로, 
+    //SelectedList.js에서 Table1.js로 prop전달
     const data = [{
         division:"계획", material_category:"HALB", material_name:"8000004",material_description:"에어탈정(아세클로페낙)반제품", supervisor:"C01",
         day1: "생산불가", day2: "생산가능", day3:"생산불가"},
@@ -51,6 +54,7 @@ function SelectedList1({onSubmit}){
         }
     ];
 
+    //검색 필터링 이벤트
     const handleSubmit = (event) => {
         event.preventDefault();
         onSubmit(event.target.elements.filter.value);

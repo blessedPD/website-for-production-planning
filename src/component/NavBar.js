@@ -3,13 +3,18 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faUser, faHouseChimney } from "@fortawesome/free-solid-svg-icons";
 import styles from "./NavBar.module.css";
 
-function NavBar ({userNameFromApp,userTeamFromApp, userRankFromApp,logOutClick}) {
+function NavBar ({userNameFromApp,userTeamFromApp, userRankFromApp,logOutClick, isHome}) {
     
+    const [isHomeNow, changeIsHomeNow] = useState(isHome);
+
     return (
         <section id={styles.navbar}>
             <div class={styles.navbar__upper}>
-                <div class={styles.navbar__title}>
-                    <FontAwesomeIcon icon={faHouseChimney} id={styles.navbar__title__logo} />
+                <div class={styles.navbar__title}
+                onClick={()=> console.log("click")}>
+                    <FontAwesomeIcon icon={faHouseChimney} size="2x" 
+                    id={styles.navbar__title__logo} 
+                    />
                     <h1>생산 준비 현황 Dashboard</h1>
                 </div>
                 <div class={styles.navbar__userInfo}>

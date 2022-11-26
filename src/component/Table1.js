@@ -1,6 +1,7 @@
 import React from "react";
 import {useTable, useGlobalFilter} from "react-table";
 import Search1 from "./Search1.js";
+import styles from "./Table1.module.css";
 
 function Table({ columns, data }) {
     const {getTableProps,getTableBodyProps,headerGroups, rows,prepareRow,setGlobalFilter,} = useTable({columns,data}, useGlobalFilter);
