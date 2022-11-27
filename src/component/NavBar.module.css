@@ -86,3 +86,9 @@
     background: white;
 }
 
+.activeMenu{
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    border: solid black;
+}
