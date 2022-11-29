@@ -1,0 +1,22 @@
+.navBar{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 4px 0px;
+    width:100%;
+    background-color:rgb(137, 220, 216);
+}
+
+.navbar__under__vl{
+    border-left: 1px solid rgb(255, 255, 255);
+    height: 60px;
+}
+
+.activeMenu{
+    background-color: rgb(247, 212, 212);
+    border-radius: 10px;
+    padding: 5px;
+    border: solid 2.5px black;
+    margin: 13.420px -6.5px;
+    color: rgba(0, 0, 0, 0.918);
+}

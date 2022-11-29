@@ -49,7 +49,7 @@ function NavBar ({userNameFromApp,userTeamFromApp, userRankFromApp,logOutClick, 
             </div>
             <hr class={styles.hr} />
             <div class={styles.navbar__under}>
-                <div class="navbar__under__menu">
+                <div class={styles.navbar__under__menu}>
                     <h2 class={curMenu===1? styles.activeMenu: null}
                     style={{cursor:'pointer'}} 
                     onClick={clickMenu} >자재 준비 현황</h2>
@@ -57,7 +57,7 @@ function NavBar ({userNameFromApp,userTeamFromApp, userRankFromApp,logOutClick, 
                 <div class={styles.navbar__under__vl}>
 
                 </div>
-                <div class="navbar__under__menu">
+                <div class={styles.navbar__under__menu}>
                     <h2 class={curMenu===2? styles.activeMenu: null}
                     style={{cursor:'pointer'}} 
                     onClick={clickMenu} >문서 승인 현황</h2>
@@ -65,7 +65,7 @@ function NavBar ({userNameFromApp,userTeamFromApp, userRankFromApp,logOutClick, 
                 <div class={styles.navbar__under__vl}>
 
                 </div>
-                <div class="navbar__under__menu">
+                <div class={styles.navbar__under__menu}>
                     <h2 class={curMenu===3? styles.activeMenu: null}
                     style={{cursor:'pointer'}} 
                     onClick={clickMenu} >Raw Data 입력</h2>

@@ -1,6 +1,9 @@
 import {useEffect, useState} from "react";
 import DailyChart from "./DailyChart.js";
 import SelectedList1 from './SelectedList1.js';
+import UploadData from './UploadData.js';
+import MDailyChart from './MDailyChart.js';
+import SelectedList2 from './SelectedList2';
 
 //props로 대쉬보드에 어떤거 띄울지 전달해서 띄워야함
 
@@ -14,13 +17,15 @@ function Dashboard({activeMenu}){
                 <SelectedList1 />
             </div>) :null}
             {activeMenu===1? (<div> 
-                2번째 차트
+                <MDailyChart />
+                <hr />
+                <SelectedList2 />
             </div>) :null}
             {activeMenu===2? (<div> 
                 3번째 차트
             </div>) :null}
             {activeMenu===3? (<div> 
-                마지막 부분
+                <UploadData />
             </div>) :null}
         </div>
     );

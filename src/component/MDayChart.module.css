@@ -1,0 +1,35 @@
+.MainDiv{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    
+}
+
+.upperDiv{
+    background-color: royalblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px ;
+    border-radius : 10%;
+}
+
+.lowerDiv{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px ;
+    border-radius : 10%;
+}
+
+.emptyDiv{
+    background-color: white;
+    height: 20px;
+}
+
+.divText{
+    margin: 5px 0px;
+}
+
