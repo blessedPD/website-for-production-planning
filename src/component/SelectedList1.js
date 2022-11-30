@@ -1,9 +1,6 @@
 import {useEffect, useState, useMemo} from "react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faUser, faHouseChimney,faKey,faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import styles from "./SelectedList1.module.css";
 import Table1 from "./Table1.js";
-import Search1 from "./Search1.js";
 
 function SelectedList1({onSubmit}){
 
@@ -90,13 +87,21 @@ function SelectedList1({onSubmit}){
     //데이터 . App.js에서 Dashboard.js로, Dashboard.js에서 SelectedList.js로, 
     //SelectedList.js에서 Table1.js로 prop전달
     const data = [{
-        division:"계획", material_category:"HALB", material_name:"8000004",material_description:"에어탈정(아세클로페낙)반제품", supervisor:"C01",
+        division:"계획", material_category:"HALB", material_name:"1435",material_description:"자재 샘플 1", supervisor:"C01",
         day1: "생산불가", day2: "생산가능", day3:"생산불가", day4:"생산불가", day5:"생산불가", day6:"생산가능", day7:"생산가능", day8:"생산불가", day9:"생산불가", day10:"생산불가"
         , day11:"생산불가", day12:"생산불가", day13:"생산불가", day14:"생산불가"},
-        {
-            division:"계획", material_category:"HALB", material_name:"8000017",material_description:"가스모틴정5밀리그램(모사프리드시트르산염수화)", supervisor:"C01",
-            day1: "생산가능", day2: "생산불가", day3:"생산불가", day4:"생산불가", day5:"생산불가", day6:"생산가능", day7:"생산가능", day8:"생산불가", day9:"생산불가", day10:"생산불가"
-            , day11:"생산불가", day12:"생산불가", day13:"생산불가", day14:"생산불가"}
+        {division:"계획", material_category:"HALB", material_name:"5357",material_description:"자재 샘플 2", supervisor:"C01",
+        day1: "생산가능", day2: "생산불가", day3:"생산불가", day4:"생산불가", day5:"생산불가", day6:"생산가능", day7:"생산가능", day8:"생산불가", day9:"생산불가", day10:"생산불가"
+        , day11:"생산불가", day12:"생산불가", day13:"생산불가", day14:"생산불가"},
+        {division:"계획", material_category:"HALB", material_name:"0742",material_description:"자재 샘플 3", supervisor:"C02",
+        day1: "생산가능", day2: "생산가능", day3:"생산가능", day4:"생산불가", day5:"생산가능", day6:"생산가능", day7:"생산불가", day8:"생산불가", day9:"생산불가", day10:"생산불가"
+        , day11:"생산불가", day12:"생산불가", day13:"생산불가", day14:"생산불가"},
+        {division:"계획", material_category:"HALB", material_name:"3643",material_description:"자재 샘플 4", supervisor:"C02",
+        day1: "생산가능", day2: "생산불가", day3:"생산불가", day4:"생산불가", day5:"생산가능", day6:"생산불가", day7:"생산가능", day8:"생산불가", day9:"생산불가", day10:"생산불가"
+        , day11:"생산불가", day12:"생산불가", day13:"생산불가", day14:"생산불가"},
+        {division:"계획", material_category:"HALB", material_name:"0119",material_description:"자재 샘플 5", supervisor:"C01",
+        day1: "생산가능", day2: "생산가능", day3:"생산가능", day4:"생산가능", day5:"생산가능", day6:"생산가능", day7:"생산가능", day8:"생산가능", day9:"생산가능", day10:"생산가능"
+        , day11:"생산불가", day12:"생산불가", day13:"생산불가", day14:"생산불가"},
     ];
 
     //검색 필터링 이벤트

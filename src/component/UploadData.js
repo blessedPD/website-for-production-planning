@@ -9,7 +9,7 @@ import UploadDataNaBar from './UploadDataNavBar';
 function UploadData(){
 
     const [curUploadMenu, changeUploadMenu] = useState(0);
-
+    
     return(
         <section class={styles.section}>
             <UploadDataNaBar curUploadMenu={curUploadMenu} 

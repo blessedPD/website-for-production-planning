@@ -3,8 +3,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faUser, faHouseChimney,faKey,faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import styles from "./SelectedList2.module.css";
 import Table1 from "./Table1.js";
-import SearchCode from "./SearchCode.js";
-import SearchName from "./SearchName.js";
+
 
 function SelectedList1({onSubmit}){
 
@@ -97,14 +96,25 @@ function SelectedList1({onSubmit}){
     ],[]);
 
     const data = [{
-        division:"계획", material_name:"8000001", material_description:"에어탈정(아세클로페낙)반제품", component:"1000092",material_description_1:"대한민국 화이팅!",
-        quantity_comp:"7000000",unit_comp:"EA",
-        day1: "시험필요", day2: "시험필요", day3:"시험필요", day4: "시험필요", day5: "시험필요",day6: "시험필요", day7: "시험필요", day8: "시험필요", day9: "시험필요", day10: "시험필요", day11: "시험필요", day12: "시험필요", day13: "시험필요", day14: "시험필요",
+        division:"계획", material_name:"7544", material_description:"자재 샘플 13", component:"4390",material_description_1:"자재 내역 샘플 1",
+        quantity_comp:"7014300",unit_comp:"EA",
+        day1: "시험완료", day2: "시험필요", day3:"시험필요", day4: "시험필요", day5: "시험필요",day6: "시험필요", day7: "시험필요", day8: "시험필요", day9: "시험필요", day10: "시험필요", day11: "시험필요", day12: "시험필요", day13: "시험필요", day14: "시험필요",
         },
-        {
-        division:"미계획", material_name:"8000009", material_description:"엘도스캡슐(에르도스테인)반제품", component:"1000096",material_description_1:"엘도스 3 capsule(서흥)",
-        quantity_comp:"7777777",unit_comp:"EA",
+        {division:"미계획", material_name:"1255", material_description:"자재 샘플 1324", component:"1511",material_description_1:"자재 내역 샘플 2",
+        quantity_comp:"57432777",unit_comp:"EA",
+        day1: "시험완료", day2: "시험완료", day3:"시험완료", day4: "시험완료", day5: "시험필요", day6: "시험필요", day7: "시험필요", day8: "시험필요", day9: "시험필요", day10: "시험필요", day11: "시험필요", day12: "시험필요", day13: "시험필요", day14: "시험필요",
+        },
+        {division:"계획", material_name:"4654", material_description:"자재 샘플 135364", component:"4431",material_description_1:"자재 내역 샘플 5",
+        quantity_comp:"1249847",unit_comp:"EA",
         day1: "시험필요", day2: "시험필요", day3:"시험필요", day4: "시험필요", day5: "시험필요", day6: "시험필요", day7: "시험필요", day8: "시험필요", day9: "시험필요", day10: "시험필요", day11: "시험필요", day12: "시험필요", day13: "시험필요", day14: "시험필요",
+        },
+        {division:"미계획", material_name:"8331", material_description:"자재 샘플 4392", component:"1513",material_description_1:"자재 내역 샘플 94",
+        quantity_comp:"6000712",unit_comp:"EA",
+        day1: "시험완료", day2: "시험필요", day3:"시험필요", day4: "시험필요", day5: "시험필요", day6: "시험필요", day7: "시험필요", day8: "시험필요", day9: "시험필요", day10: "시험필요", day11: "시험필요", day12: "시험필요", day13: "시험필요", day14: "시험필요",
+        },
+        {division:"계획", material_name:"0119", material_description:"자재 샘플 52313", component:"4096",material_description_1:"자재 내역 샘플 108",
+        quantity_comp:"4311298",unit_comp:"EA",
+        day1: "시험완료", day2: "시험완료", day3:"시험완료", day4: "시험완료", day5: "시험완료", day6: "시험완료", day7: "시험필요", day8: "시험필요", day9: "시험필요", day10: "시험필요", day11: "시험필요", day12: "시험필요", day13: "시험필요", day14: "시험필요",
         },
     ];
 

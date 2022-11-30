@@ -1,0 +1,19 @@
+.table{
+    text-align: center;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.approveNode{
+    background-color: rgb(166, 254, 34);
+    cursor: pointer;
+    color:black;
+    font-weight: 800;
+}
+
+.notApproveNode{
+    background-color: rgb(240, 64, 41);
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}

@@ -7,7 +7,8 @@ import {read} from 'xlsx';
 function ExcelUpload({curUploadMenu}){
 
     const newUpload = (e) =>{
-        console.log(e);
+        console.log(e.target.files[0]);
+        //api 전송 (엑셀 종류에 따라 api 다르게)
     };
 
     // useRef를 이용해 input태그에 접근한다.
@@ -15,7 +16,7 @@ function ExcelUpload({curUploadMenu}){
 
     // 버튼클릭시 input태그에 클릭이벤트를 걸어준다. 
     const onCickExcelUpload = () => {
-    excelInput.current.click();
+        excelInput.current.click();
     };
 
     return(
